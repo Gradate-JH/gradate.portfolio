@@ -1,0 +1,183 @@
+/* form */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Ubuntu';
+    line-height: 1.5;
+    height: 2000px;
+    background-color: #222222;
+}
+
+
+/* logo */
+
+header .logo a {
+    text-align: center;
+    /* border: 1px solid; */
+    display: block;
+    width: 280px;
+    color: rgba(82, 255, 82, 0.808);
+    margin: 0;
+    padding: 16px 0;
+}
+
+header .logo a:hover {
+    text-decoration: none;
+}
+
+
+/* header */
+
+header {
+    font-family: 'Ubuntu';
+    width: 100%;
+    border: 1px solid;
+    position: relative;
+    transition: all 0.7s;
+    z-index: 9;
+}
+
+header .top_nav a {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 8px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+
+header .top_nav {
+    display: flex;
+}
+
+header .top_nav a:hover,
+header .top_sidemenu a:hover {
+    text-decoration: none;
+}
+
+header .top_nav ul,
+header .top_sidemenu ul {
+    list-style: none;
+}
+
+header ul li:hover {
+    text-decoration: none;
+}
+
+header .top_nav ul {
+    display: flex;
+}
+
+header .top_nav ul li {
+    padding: 16px;
+}
+
+
+/* sidemenu */
+
+header .top_sidemenu_toggle {
+    position: absolute;
+    width: 40px;
+    padding: 6px;
+    top: 23px;
+    right: 40px;
+}
+
+header .top_sidemenu_toggle>span {
+    display: block;
+    background-color: white;
+    height: 1.4px;
+}
+
+header .top_sidemenu_toggle>span:nth-child(2) {
+    margin: 4px 0 4px auto;
+    width: 75%;
+    transition: 0.3s all;
+}
+
+header .top_sidemenu_toggle>span:nth-child(3) {
+    margin-left: auto;
+    width: 50%;
+    transition: 0.6s all;
+}
+
+header .top_sidemenu_toggle:hover>span:nth-child(2),
+header .top_sidemenu_toggle:hover>span:nth-child(3) {
+    width: 100%
+}
+
+header .sidemenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #222222;
+    background-image: linear-gradient(315deg, #2f2f2f 0%, #464646 74%);
+    width: 20%;
+    height: 100vh;
+    z-index: 999;
+    padding: 3rem;
+    color: white;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+header .sidemenu.active {
+    transform: translate3d(0, 0, 0);
+}
+
+header .sidemenu .sidemenu_close {
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+}
+
+header .sidemenu .sidemenu_close::before,
+header .sidemenu .sidemenu_close::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 13px;
+    height: 28px;
+    width: 2px;
+    background: white;
+}
+
+header .sidemenu .sidemenu_close::before {
+    transform: rotate(45deg);
+}
+
+header .sidemenu .sidemenu_close::after {
+    transform: rotate(-45deg);
+}
+
+header .sidemenu nav ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+header .sidemenu nav li {
+    padding: 15px 0;
+}
+
+header .sidemenu nav a {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+}
