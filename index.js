@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // sidemenu open / close
     $(".top_sidemenu_toggle").click(function() {
         $(".sidemenu").addClass("active");
     });
@@ -6,4 +8,8 @@ $(document).ready(function() {
     $(".sidemenu_close").click(function() {
         $(".sidemenu").removeClass("active");
     });
+
+
+
+
 });

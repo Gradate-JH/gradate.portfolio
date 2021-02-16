@@ -24,14 +24,20 @@ body {
 
 /* logo */
 
+header .logo {
+    margin: 0;
+    padding: 16px 0;
+    position: absolute;
+}
+
 header .logo a {
     text-align: center;
     /* border: 1px solid; */
     display: block;
-    width: 280px;
+    width: 250px;
     color: rgba(82, 255, 82, 0.808);
-    margin: 0;
-    padding: 16px 0;
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 header .logo a:hover {
@@ -45,14 +51,18 @@ header {
     font-family: 'Ubuntu';
     width: 100%;
     border: 1px solid;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     transition: all 0.7s;
     z-index: 9;
+    background-color: #222222
 }
 
 header .top_nav a {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 8px;
     display: block;
     text-transform: uppercase;
@@ -61,6 +71,8 @@ header .top_nav a {
 
 header .top_nav {
     display: flex;
+    margin-top: 10px;
+    margin-left: 240px;
 }
 
 header .top_nav a:hover,
@@ -83,6 +95,15 @@ header .top_nav ul {
 
 header .top_nav ul li {
     padding: 16px;
+}
+
+header .wrap {
+    width: 1150px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -125,7 +146,7 @@ header .sidemenu {
     right: 0;
     background-color: #222222;
     background-image: linear-gradient(315deg, #2f2f2f 0%, #464646 74%);
-    width: 20%;
+    width: 30%;
     height: 100vh;
     z-index: 999;
     padding: 3rem;
@@ -180,4 +201,55 @@ header .sidemenu nav a {
     font-size: 1.2rem;
     color: white;
     text-transform: uppercase;
+}
+
+
+/* sidemenu by display size */
+
+@media (max-width:550px) {
+    header .sidemenu {
+        width: 100%;
+    }
+    header .sidemenu nav a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:551px) and (max-width:1023px) {
+    header .sidemenu {
+        width: 80%;
+    }
+    header .sidemenu nav a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1024px) {
+    header .sidemenu {
+        width: 35%;
+    }
+    header .sidemenu nav a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    header .top_nav {
+        display: none;
+    }
+}
+
+
+/* blank */
+
+.blank {
+    width: 100%;
+    height: 200px;
+}
+
+
+/* Section - About Me */
+
+.About_Me {
+    color: white;
 }
