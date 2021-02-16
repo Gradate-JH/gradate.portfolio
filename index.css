@@ -254,7 +254,7 @@ section {
     font-family: 'Raleway';
 }
 
-.Home .img-fluid {
+.Home .img_profile {
     margin: 0 auto;
     text-align: center;
     border: 20px solid #252525;
