@@ -27,14 +27,13 @@ body {
 header .logo {
     margin: 0;
     padding: 16px 0;
-    position: absolute;
 }
 
 header .logo a {
     text-align: center;
     /* border: 1px solid; */
     display: block;
-    width: 250px;
+    width: 300px;
     color: rgba(82, 255, 82, 0.808);
     padding-top: 15px;
     padding-right: 15px;
@@ -57,7 +56,7 @@ header {
     right: 0;
     transition: all 0.7s;
     z-index: 9;
-    background-color: #222222
+    background-color: #222222;
 }
 
 header .top_nav a {
@@ -72,7 +71,6 @@ header .top_nav a {
 header .top_nav {
     display: flex;
     margin-top: 10px;
-    margin-left: 240px;
 }
 
 header .top_nav a:hover,
@@ -138,6 +136,13 @@ header .top_sidemenu_toggle>span:nth-child(3) {
 header .top_sidemenu_toggle:hover>span:nth-child(2),
 header .top_sidemenu_toggle:hover>span:nth-child(3) {
     width: 100%
+}
+
+header .sidemenu span {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(82, 255, 82, 0.808);
+    /* border-bottom: 2px solid; */
 }
 
 header .sidemenu {
@@ -211,7 +216,7 @@ header .sidemenu nav a {
         width: 100%;
     }
     header .sidemenu nav a {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -233,22 +238,29 @@ header .sidemenu nav a {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     header .top_nav {
         display: none;
     }
-}
-
-
-/* blank */
-
-.blank {
-    width: 100%;
-    height: 200px;
+    /* header .logo {
+        display: none;
+    } */
 }
 
 
 /* Section - About Me */
+
+.Home .img-fluid {
+    margin: 0 auto;
+    text-align: center;
+    border: 20px solid #252525;
+    border-radius: 40%;
+}
+
+.Home {
+    height: 600px;
+    padding-bottom: 40px;
+}
 
 .About_Me {
     color: white;
