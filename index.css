@@ -250,6 +250,10 @@ header .sidemenu nav a {
 
 /* Section - About Me */
 
+section {
+    font-family: 'Raleway';
+}
+
 .Home .img-fluid {
     margin: 0 auto;
     text-align: center;
